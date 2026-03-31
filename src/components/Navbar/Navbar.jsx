@@ -33,7 +33,7 @@ const Navbar = () => {
   <div className="navbar-end gap-4">
     <button className='cursor-pointer btn rounded-full'><img src={cartImage} alt="" /></button>
     <a href="">Login</a>
-    <button className="btn bg-gradient-to-r from-[#4f39f6] to-[#9514fa] rounded-3xl font-semibold text-white">Get Started</button>
+    <button className="btn bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-3xl font-semibold text-white">Get Started</button>
   </div>
 </div>
     );
