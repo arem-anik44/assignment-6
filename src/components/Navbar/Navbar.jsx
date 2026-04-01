@@ -1,7 +1,7 @@
 import React from 'react';
 import cartImage from "../../assets/shopping-cart-01.png";
 
-const Navbar = () => {
+const Navbar = ({isAvilable, setIsAvilable,cart}) => {
     return (
         <div className="navbar bg-white-100  py-5  container mx-auto lg:px-20 ">
   <div className="navbar-start ">
@@ -31,7 +31,10 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end gap:2 md:gap-3 lg:gap-4 ">
-    <button className='cursor-pointer btn rounded-full'><img src={cartImage} alt="" /></button>
+    <button onClick={() => setIsAvilable(false)} className='cursor-pointer btn rounded-full'>
+  <img src={cartImage} alt="" />
+  <span>{cart.length}</span>
+</button>
     <a href="" className='hidden md:block'>Login</a>
     <button className="btn bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-3xl font-semibold text-white">Get Started</button>
   </div>
