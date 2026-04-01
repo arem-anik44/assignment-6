@@ -69,7 +69,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Line */}
+        
         <div className="border-t border-white/10 mt-10 pt-6 flex flex-col sm:flex-col lg:flex-row justify-between items-center gap-4 text-sm text-gray-500">
           <p>© 2026 Digitools. All rights reserved.</p>
 

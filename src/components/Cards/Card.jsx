@@ -3,6 +3,7 @@ import GetStarted from '../GetStarted/GetStarted';
 import Pricing from '../Pricing/Pricing';
 import CardType1 from '../ui/CardType1';
 import { toast } from 'react-toastify';
+import ReadyToTransform from '../ReadyToTransform/ReadyToTransform';
 
 const Card = ({
   cardInfoPromise,
@@ -63,6 +64,7 @@ const Card = ({
 
         <GetStarted />
         <Pricing />
+        <ReadyToTransform />
       </div>
 
       
