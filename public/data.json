@@ -1,6 +1,4 @@
-{
-  "website": "Digitools",
-  "products": [
+[
     {
       "id": 1,
       "name": "AI Writing Pro",
@@ -73,7 +71,7 @@
     },
     {
       "id": 6,
-      "name": "Social Media Content Kit",
+      "name": "Social Media Content",
       "tag": "Best Seller",
       "description": "Complete toolkit for creating engaging social media content across all platforms.",
       "price": 39,
@@ -85,5 +83,4 @@
       ],
       "buttonText": "Buy Now"
     }
-  ]
-}
+]

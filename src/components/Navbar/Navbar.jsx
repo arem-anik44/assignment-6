@@ -3,7 +3,7 @@ import cartImage from "../../assets/shopping-cart-01.png";
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-white-100  py-5  container mx-auto lg:px-20">
+        <div className="navbar bg-white-100  py-5  container mx-auto lg:px-20 ">
   <div className="navbar-start ">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -19,7 +19,7 @@ const Navbar = () => {
       <li><a href="">FAQ</a></li>
       </ul>
     </div>
-    <a className="text-xl md:text-3xl lg:text-4xl font-semibold bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-transparent bg-clip-text inline-block">DigiTools </a>
+    <a className="text-xl md:text-3xl lg:text-4xl font-semibold bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-transparent bg-clip-text inline-block items-center">DigiTools</a>
   </div>
   <div className="navbar-center hidden lg:flex text-[#101727]">
     <ul className="menu menu-horizontal px-1">
