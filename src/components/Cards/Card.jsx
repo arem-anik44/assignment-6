@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import GetStarted from '../GetStarted/GetStarted';
 import Pricing from '../Pricing/Pricing';
 import CardType1 from '../ui/CardType1';
+import { toast } from 'react-toastify';
 
 const Card = ({
   cardInfoPromise,
@@ -48,7 +49,7 @@ const Card = ({
         </div>
       </div>
 
-      {/* Products Section */}
+      
       <div className={`${isAvilable ? "" : "hidden"}`}>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full max-w-7xl mx-auto container gap-4 py-20'>
           {Cards.map((card) => (
@@ -64,7 +65,7 @@ const Card = ({
         <Pricing />
       </div>
 
-      {/* Cart Section */}
+      
       <div className={`${isAvilable ? "hidden" : ""} py-20`}>
         <div className='w-full max-w-5xl mx-auto border border-gray-200 rounded-2xl p-8 shadow-sm'>
           <h2 className='text-2xl font-bold mb-8'>Your Cart</h2>
@@ -103,7 +104,10 @@ const Card = ({
                 </div>
 
                 <button
-  onClick={handleClearCart}
+  onClick={() => {
+    handleClearCart();
+    toast.success("Order placed successfully!");
+  }}
   className='btn btn-block bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-3xl text-white border-none'
 >
   Proceed To Checkout

@@ -4,6 +4,7 @@ import Card from './components/Cards/Card';
 import Herobanner from './components/herobanner/Herobanner';
 import Navbar from './components/Navbar/Navbar';
 import Statsbar from './components/statsbar/Statsbar';
+import { toast } from 'react-toastify';
 
 const fetchCard = async () => {
   const res = await fetch("/data.json");
@@ -17,21 +18,28 @@ function App() {
   const [cart, setCart] = useState([]);
 
   const handleAddToCart = (product) => {
-    const isExist = cart.find((item) => item.id === product.id);
+  const isExist = cart.find((item) => item.id === product.id);
 
-    if (!isExist) {
-      setCart([...cart, product]);
-    }
-  };
+  if (!isExist) {
+    setCart([...cart, product]);
+
+    toast.success("Added to cart successfully!");
+  } else {
+    toast.warning("Already added!");
+  }
+};
 
   const handleRemoveCart = (id) => {
-    const remainingCart = cart.filter((item) => item.id !== id);
-    setCart(remainingCart);
-  };
+  const remainingCart = cart.filter((item) => item.id !== id);
+  setCart(remainingCart);
+
+  toast.warning("Item removed from cart!");
+};
 
   const handleClearCart = () => {
   setCart([]);
 };
+
 
   return (
     <>
