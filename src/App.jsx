@@ -29,6 +29,10 @@ function App() {
     setCart(remainingCart);
   };
 
+  const handleClearCart = () => {
+  setCart([]);
+};
+
   return (
     <>
       <Navbar
@@ -48,6 +52,7 @@ function App() {
           cart={cart}
           handleAddToCart={handleAddToCart}
           handleRemoveCart={handleRemoveCart}
+          handleClearCart={handleClearCart}
         />
       </Suspense>
     </>

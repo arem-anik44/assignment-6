@@ -9,7 +9,8 @@ const Card = ({
   setIsAvilable,
   cart,
   handleAddToCart,
-  handleRemoveCart
+  handleRemoveCart,
+  handleClearCart
 }) => {
   const [Cards, setCards] = useState([]);
 
@@ -101,9 +102,12 @@ const Card = ({
                   <h3 className='text-2xl font-bold'>${totalPrice}</h3>
                 </div>
 
-                <button className='btn btn-block bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-3xl text-white border-none'>
-                  Proceed To Checkout
-                </button>
+                <button
+  onClick={handleClearCart}
+  className='btn btn-block bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-3xl text-white border-none'
+>
+  Proceed To Checkout
+</button>
               </>
             )
           }
