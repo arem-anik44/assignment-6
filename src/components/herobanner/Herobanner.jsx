@@ -24,13 +24,13 @@ const Herobanner = () => {
 
                 </p>
                 <button className="btn bg-linear-to-r from-[#4f39f6] to-[#9514fa] rounded-3xl font-[#700] text-white mr-3">Explore Products</button>
-                <button class="btn btn-ghost group relative p-0.5 overflow-hidden rounded-3xl font-bold ">
+                <button className="btn btn-ghost group relative p-0.5 overflow-hidden rounded-3xl font-bold ">
   
                     <span className="absolute inset-0 bg-linear-to-r from-[#4f39f6] to-[#9514fa]"></span>
                     
                     
-                    <span class="relative flex items-center justify-center w-full h-full px-6 py-2 transition-all duration-300 bg-base-100 rounded-3xl group-hover:bg-transparent ">
-                        <span class="bg-linear-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent group-hover:text-white">
+                    <span className="relative flex items-center justify-center w-full h-full px-6 py-2 transition-all duration-300 bg-base-100 rounded-3xl group-hover:bg-transparent ">
+                        <span className="bg-linear-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent group-hover:text-white">
                         Watch Demo
                         </span>
                     </span>
