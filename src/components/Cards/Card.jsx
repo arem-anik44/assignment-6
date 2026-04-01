@@ -1,5 +1,6 @@
 import React, { use, useState } from 'react';
 import GetStarted from '../GetStarted/GetStarted';
+import Pricing from '../Pricing/Pricing';
 
 // const cardInfoPromise = async () =>{
 //     const res = await fetch("/data.json");
@@ -29,6 +30,7 @@ const Card = () => {
 
 
         <GetStarted/>
+        <Pricing/>
         </div>
 
     );
