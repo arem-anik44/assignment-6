@@ -1,7 +1,9 @@
  Project Name  ---
+ 
 DigiTools - Digital Product Store
 
 Description  ----
+
 This is a digital product website.  
 User can see products and add to cart.  
 Also can remove and checkout easily.  

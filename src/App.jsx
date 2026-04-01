@@ -5,6 +5,7 @@ import Herobanner from './components/herobanner/Herobanner';
 import Navbar from './components/Navbar/Navbar';
 import Statsbar from './components/statsbar/Statsbar';
 import { toast } from 'react-toastify';
+import Footer from './components/Footer/Footer';
 
 const fetchCard = async () => {
   const res = await fetch("/data.json");
@@ -63,6 +64,8 @@ function App() {
           handleClearCart={handleClearCart}
         />
       </Suspense>
+
+      <Footer/>
     </>
   )
 }
